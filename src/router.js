@@ -13,6 +13,7 @@ import CategoryDelete from './views/CategoryDelete'
 import DishList from './views/DishList'
 import DishAdd from './views/DishAdd'
 import DishDelete from './views/DishDelete'
+import DishUpdate from './views/DishUpdate'
 import OrderList from './views/OrderList'
 import Security from './views/Security'
 Vue.use(Router)
@@ -36,6 +37,7 @@ export default new Router({
         {path:'/dish/list',component:DishList},
         {path:'/dish/add',component:DishAdd},
         {path:'/dish/delete',component:DishDelete},
+        {path:'/dish/update',component:DishUpdate},
         {path:'/orderlist',component:OrderList},
         {path:'/security',component:Security}
       ]

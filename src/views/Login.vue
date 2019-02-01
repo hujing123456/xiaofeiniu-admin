@@ -35,9 +35,8 @@ export default {
       var url=this.$store.state.globalSettings.apiUrl+'/admin/login';
       this.$axios.get(url,{params:this.formData}).then((res)=>{
         if(res.data.code==200){
-          this.$store.commit('setAdminName',this.formData.aname);
+          this.$store.commit('setIsLogin',true);
           this.$router.push('/main');
-          
         }else{
           this.$alert('用户名或密码错误！','登录失败',{type:'error'}).then(()=>{}).catch(()=>{});
         }
